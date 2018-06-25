@@ -1,0 +1,8 @@
+<section class="container categoryList">
+    <h1 class="title">{{ .Title }}</h1>
+    <div class="categories">
+        {{ range .Data.Pages }}
+            <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
+        {{ end }}
+    </div>
+</section>
