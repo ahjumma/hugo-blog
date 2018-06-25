@@ -6,7 +6,7 @@
 
       <div class="categories">
       {{ range $category := .Params.categories }}
-        <h6><a href="/categories/{{lower $category}}">{{$category}}</a></h6>
+        <h6><a href="/categories/{{lower $category}}">#{{$category}}</a></h6>
       {{ end }}
       </div>
       {{ if eq .Params.math "true" }}

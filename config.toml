@@ -15,8 +15,8 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
    category = "categories"
 
 [params] # theme parameters
-    author = ">>> import this andrew" # Author's name.
-    info = "Vancouver-based Fullstack Developer" # Author's job title or info.
+    author = ">>> import andrew" # Author's name.
+    info = "Developer. Educator. Motivator." # Author's job title or info.
     description = "Andrew Kim's personal website" # Site description.
     keywords = "blog,developer,personal" # Site keywords.
 
