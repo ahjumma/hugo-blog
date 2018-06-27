@@ -41,6 +41,10 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     name = "LinkedIn"
     weight = 2
     url = "https://www.linkedin.com/in/andrew-kim-73ba27114/"
+[[params.social]]
+    name = "Email"
+    weight = 3
+    url = "mailto:taeyeonkim90@gmail.com"
 
 # Menu links
 [[menu.main]]

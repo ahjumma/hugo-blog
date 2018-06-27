@@ -4,7 +4,7 @@ date = 2018-06-24T23:34:34-07:00
 title = "Jekyll to Wordpress to Hugo"
 slug = "" 
 tags = []
-categories = ["Hugo", "Draft", "Test"]
+categories = ["Hugo"]
 +++
 ---
 ### Why I ditched Jekyll and Wordpress
