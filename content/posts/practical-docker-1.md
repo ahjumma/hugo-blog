@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2018-06-26T17:59:21-07:00
 title = "Introduction to Docker (Practical Docker: 1)"
 slug = "" 

@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2018-06-26T18:23:07-07:00
 title = "Docker work flow in your team (Practical Docker: 3)"
 slug = "" 
