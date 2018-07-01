@@ -54,7 +54,8 @@ As you see, from a Docker image, you can spin up multiple Docker containers as i
 2. All dependencies are encapsulated within a Docker image. This allows your development and production machine to maintain clean environments.
 3. If it works on your development machine, it will work on any other machines not limited to operating systems. This includes your deployment machine as well.
 
-### Summary
+---
+### Take home messages
 Docker is:
 
 1. Container technology
