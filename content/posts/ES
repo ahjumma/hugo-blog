@@ -1,0 +1,54 @@
+ES write optimization
+  - size of the bulk document is more important than the number of total documents
+  - make sure to round-robin across all the data nodes
+  - chain iterators rather than creating a whole list
+
+ES
+  - an index is sharded with Lucene indexes
+  - a Lucene index is made up of index segments
+  - an index with two shards == two index with a single shard 
+  - lucene index is immutable. never updated. very different from B-trees
+  - delete operation is marked in a separate deletion file as a bitmap
+  - upon new addition, index changes are buffered in memory
+  - Lucene flushes into disk later depending on your flush policy
+  - Lucene index is made up of one or more immutable index segments
+  - upon a search, Lucene searches on every segment, filter out deletes, and merges all results
+  - Lucene occasionaly merges segments
+  - ES write speed optimization == Indexing speed optimization
+
+  - You index documents, to an Elasticsearch index. The Elasticsearch index has shards, which are Lucene indexes
+
+
+File descriptor
+  - on linux
+  - the set of fd open in a process can be accessed at /proc/PID/fd/
+  - per process file descriptor table
+    - each process has their virtual file descriptor table
+    - each entry in the file descriptor table points to an entry in the global file table
+  - global file table / open file table
+    - counts how many processes are using it
+    - offset. like a file cursor
+    - contains read/write permission per process
+      - different processes can have different permission
+    - points to entry in inode table
+  - inode table
+    - counts how many processes are using this file
+    - path to the file
+
+Linkedin
+  - optimization
+    - reduce initial load time of a specific page (view_info) by half
+    - lazy loading DOM elements -> reducing initial amount of database interaction -> reduced latency
+
+  - data access migration
+    - MySQL access to Cassandra access
+    - create Cassandra access layer service class
+
+  - data migration (ETL)
+    - 180 million Cassandra entries -> ElasticSearch
+    - optimized throughput of the migration script by 300% compared to the initial script
+    - write down the numbers
+    - python multiprocessing pool -> worker management
+
+    - Cassandra -> Spark -> ES
+    - 1 year expected throughput -> 2 days
