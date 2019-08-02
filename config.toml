@@ -1,4 +1,4 @@
-baseurl = "https://taeyeonkim90.github.io" # Hostname (and path) to the root.
+baseurl = "https://ahjumma.github.io" # Hostname (and path) to the root.
 title = "andrewkim" # Site title.
 theme = "coder" # Set the theme.
 languagecode = "en" # The site’s language code.
