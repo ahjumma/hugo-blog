@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/taeyeonkim90/hugo-blog.svg?branch=master)](https://travis-ci.org/taeyeonkim90/hugo-blog)
+[![Build Status](https://travis-ci.org/ahjumma/hugo-blog.svg?branch=master)](https://travis-ci.org/ahjumma/hugo-blog)
 
 # Summary
 This is a Hugo-based blogging project for my personal blogging posts.
