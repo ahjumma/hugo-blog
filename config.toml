@@ -59,3 +59,7 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     name = "About"
     weight = 3
     url = "/about/"
+[[menu.main]]
+    name = "Resume"
+    weight = 4
+    url = "/files/test.txt"
