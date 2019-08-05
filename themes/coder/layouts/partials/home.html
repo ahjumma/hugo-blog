@@ -5,7 +5,11 @@
     {{ with .Site.Params.social }}
     <ul>
       {{ range sort .}}
-      <li><a href="{{ .url }}">{{ .name }}</a></li>
+      <li>
+        <a href="{{ .url }}" aria-label="{{ .name }}" target="_blank">
+          <i class="{{ .icon }}" aria-hidden="true"></i>
+        </a>
+      </li>
       {{ end }}
     </ul>
     {{ end }}
