@@ -1,0 +1,20 @@
+{
+  "name": "coder",
+  "version": "1.0.0",
+  "description": "![Hugo Coder Logotype](https://github.com/luizdepra/hugo-coder/blob/master/images/logos/logotype-a.png)",
+  "main": "index.js",
+  "dependencies": {
+    "less": "^3.9.0",
+    "uglifycss": "^0.0.29"
+  },
+  "devDependencies": {
+    "uglifycss": "0.0.29",
+    "less": "3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

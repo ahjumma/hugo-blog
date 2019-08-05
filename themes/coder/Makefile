@@ -10,8 +10,8 @@ CSS_RTL_FILE = style-rtl.min.css
 CSS_TMP_FILE = tmp.css
 
 define build_less
-	lessc $(LESS_DIR)/$(1) > $(CSS_DIR)/$(CSS_TMP_FILE)
-	uglifycss $(CSS_DIR)/$(CSS_TMP_FILE) > $(CSS_DIR)/$(2)
+	npx lessc $(LESS_DIR)/$(1) > $(CSS_DIR)/$(CSS_TMP_FILE)
+	npx uglifycss $(CSS_DIR)/$(CSS_TMP_FILE) > $(CSS_DIR)/$(2)
 	rm -f $(CSS_DIR)/$(CSS_TMP_FILE)
 endef
 
